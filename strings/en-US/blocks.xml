@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="LightSensor">
+    <PolyGroup Name="LightSensor" DisplayName="Light Sensor" DisplayNamePrefix="Light">
+      <Description><![CDATA[<p>Context help for PolyGroup <b>Light Sensor</b></p>]]></Description>
+      <Parameter Name="Direction" DisplayName="Direction" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Direction">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Notes:</b> Direction for a Numeric sensor value to change.<br/>Used in Sensor Change Modes that have an Amount input.<br/>0 = Increase<br/>1 = Decrease<br/>2 = Any</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Port" DisplayName="Port" Link="page.html?Path=editor%2FPortSelector.html#Port">
+        <Description><![CDATA[Many programming blocks require that you select the ports on the EV3 Brick (A, B, C, D, 1, 2, 3, and 4) that these blocks will use. The Port Selectors are in the top right-hand corner of these blocks.]]></Description>
+      </Parameter>
+      <Parameter Name="Comparison" DisplayName="Compare Type">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Allowed Values:</b> 0 - 5<br/><b>Notes:</b> 0:  = (Equal to)<br/>1:  ≠ (Not Equal to)<br/>2:  &gt; (Greater than)<br/>3:  ≥ (Greater than or Equal to)<br/>4:  &lt; (Less than)<br/>5:  ≤ (Less than or Equal to)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Threshold Value" DisplayName="Threshold Value">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Allowed Values:</b> Any number<br/><b>Notes:</b> Value to compare sensor data to</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Amount" DisplayName="Amount" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Amount">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Notes:</b> Amount for sensor value to change in a Sensor Change Mode</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Light">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Notes:</b> The sensor data value used for a Compare mode.</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="Compare Result">
+        <Description><![CDATA[<p><b>Type:</b> Logic<br/><b>Notes:</b> True/False result of a Compare mode.</p>]]></Description>
+      </Parameter>
+      <Parameter Name="CalibrateValueMin" DisplayName="Value">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Allowed Values:</b> 0 – 100<br/><b>Notes:</b> Light intensity for Calibrate modes</p>]]></Description>
+      </Parameter>
+      <Parameter Name="CalibrateValueMax" DisplayName="Value">
+        <Description><![CDATA[<p><b>Type:</b> Numeric<br/><b>Allowed Values:</b> 0 – 100<br/><b>Notes:</b> Light intensity for Calibrate modes</p>]]></Description>
+      </Parameter>
+      <Block Mode="MeasureReflectedLight" DisplayName="Reflected Light Intensity">
+        <Description><![CDATA[The Measure – Reflected Light Intensity mode outputs the light intensity in Measured Value.]]></Description>
+      </Block>
+      <Block Mode="MeasureAmbientLight" DisplayName="Ambient Light Intensity">
+        <Description><![CDATA[The Measure – Ambient Light Intensity mode outputs the light intensity in Measured Value.]]></Description>
+      </Block>
+      <Block Mode="CompareReflectedLight" DisplayName="Reflected Light Intensity">
+        <Description><![CDATA[The Compare – Reflected Light Intensity and Compare – Ambient Light Intensity modes compare the detected light intensity to the Threshold Value using the selected Compare Type. The True/False result is output in Compare Result, and the detected light intensity is output in Measured Value.]]></Description>
+      </Block>
+      <Block Mode="CompareAmbientLight" DisplayName="Ambient Light Intensity">
+        <Description><![CDATA[The Compare – Reflected Light Intensity and Compare – Ambient Light Intensity modes compare the detected light intensity to the Threshold Value using the selected Compare Type. The True/False result is output in Compare Result, and the detected light intensity is output in Measured Value.]]></Description>
+      </Block>
+      <Block Mode="ChangeReflectedLight" DisplayName="Reflected Light Intensity" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Mode_ChangeReflectedLight">
+        <Description><![CDATA[Each of the sensor types listed in the Wait block has one or more Change modes. A Change mode will continuously read data from the sensor and wait for it to change to a different value, or change by an amount that you specify. You can wait for some types of sensor data to change by a certain Amount, and other types to change to a  different value.]]></Description>
+      </Block>
+      <Block Mode="ChangeAmbientLight" DisplayName="Ambient Light Intensity" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Mode_ChangeAmbientLight">
+        <Description><![CDATA[Each of the sensor types listed in the Wait block has one or more Change modes. A Change mode will continuously read data from the sensor and wait for it to change to a different value, or change by an amount that you specify. You can wait for some types of sensor data to change by a certain Amount, and other types to change to a  different value.]]></Description>
+      </Block>
+    <Block Mode="WaitLightSensorCompareReflectedLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_WaitLightSensorCompareReflectedLight">
+        <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Compare - Reflected Light Intensity<br/><b>Use:</b> Wait for the reflected light intensity to reach a certain value.</p>]]></Description>
+      </Block>
+      <Block Mode="WaitLightSensorCompareAmbientLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_WaitLightSensorCompareAmbientLight">
+        <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Compare - Ambient Light Intensity<br/><b>Use:</b> Wait for the ambient light intensity to reach a certain value.</p>]]></Description>
+      </Block>
+    <Block Mode="WaitLightSensorChangeReflectedLight" DisplayName="" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Mode_WaitLightSensorChangeReflectedLight">
+        <Description><![CDATA[Each of the sensor types listed in the Wait block has one or more Change modes. A Change mode will continuously read data from the sensor and wait for it to change to a different value, or change by an amount that you specify. You can wait for some types of sensor data to change by a certain Amount, and other types to change to a  different value.]]></Description>
+      </Block>
+    <Block Mode="WaitLightSensorChangeAmbientLight" DisplayName="" Link="page.html?Path=blocks%2FLEGO%2FWait.html#Mode_WaitLightSensorChangeAmbientLight">
+        <Description><![CDATA[Each of the sensor types listed in the Wait block has one or more Change modes. A Change mode will continuously read data from the sensor and wait for it to change to a different value, or change by an amount that you specify. You can wait for some types of sensor data to change by a certain Amount, and other types to change to a  different value.]]></Description>
+      </Block>
+    <Block Mode="LoopLightSensorCompareReflectedLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_LoopLightSensorCompareReflectedLight">
+        <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Reflected Light Intensity<br/><b>Use:</b> Repeat a sequence of blocks until the reflected light intensity reaches a certain value.</p>]]></Description>
+      </Block>
+    <Block Mode="LoopLightSensorCompareAmbientLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_LoopLightSensorCompareAmbientLight">
+        <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Ambient Light Intensity<br/><b>Use:</b> Repeat a sequence of blocks until the ambient light intensity reaches a certain value.</p>]]></Description>
+      </Block>
+      <Block Mode="SwitchLightSensorCompareReflectedLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_SwitchLightSensorCompareReflectedLight">
+       <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Compare - Reflected Light Intensity<br/><b>Use:</b> Choose between two sequences of blocks depending on the reflected light intensity.</p>]]></Description>
+      </Block>
+      <Block Mode="SwitchLightSensorCompareAmbientLight" DisplayName="" Link="page.html?Path=editor%2FUsingSensors_Color.html#Mode_SwitchLightSensorCompareAmbientLight">
+       <Description><![CDATA[<p><b>Mode:</b> Light Sensor - Compare - Ambient Light Intensity<br/><b>Use:</b> Choose between two sequences of blocks depending on the ambient light intensity.</p>]]></Description>
+      </Block>	  
+    <Category Name="Calibrate" DisplayName="Calibrate">
+        <Category Name="ReflectedLight" DisplayName="Reflected Light Intensity">
+          <Block Mode="CalibrateMinLight" DisplayName="Minimum">
+            <Description><![CDATA[The Calibrate – Minimum mode allows you to specify the minimum light intensity in the Value input. After calibration, the Light Sensor will report this light intensity as 0 or the value specified.]]></Description>
+          </Block>
+          <Block Mode="CalibrateMaxLight" DisplayName="Maximum">
+            <Description><![CDATA[The Calibrate – Maximum mode allows you to specify the maximum light intensity in the Value input. After calibration, the Light Sensor will report this light intensity as 100 or the value specified.]]></Description>
+          </Block>
+          <Block Mode="CalibrateResetLight" DisplayName="Reset">
+            <Description><![CDATA[The Calibrate – Reset mode restores the Light Sensor calibration to its default state.]]></Description>
+          </Block>
+        </Category>
+      </Category>
+    </PolyGroup>
+  </PolyGroups>
+<formatOutput>1</formatOutput></EditorStrings>

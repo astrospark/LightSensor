@@ -1,0 +1,155 @@
+
+	
+						<h1>Color Sensor Block<a name="top"></a></h1>
+		<div id="block_79" class="block blockHeader">
+				<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="top" class="image"><img width="128" height="128" src="../../nonlocalized/editor/resources/content/Sensor_Palette_LightSensor_128x128.png" /></td>
+				<td valign="top" class="description"><div class="text-wrapper">The Color Sensor block gets data from the Color Sensor. You can measure the color or intensity of light and get a Numeric output. You can also compare sensor data to an input value and get a Logic (True or False) output.<br />
+<br />
+See <a href="page.html?Path=editor%2FUsingSensors_Color.html">Using the Color Sensor</a> for more information about how the Color Sensor works, the different modes, the data provided, and programming examples.</div></td>
+			</tr>
+		</table>
+			</div>
+	<div id="block_80" class="block blockTip">
+		<div class="title">Tips and Tricks</div>
+		<div class="boxContent">
+			<div class="description">The Color Sensor block outputs data with a <a href="page.html?Path=editor%2FDataWires.html">Data Wire</a> See <a href="page.html?Path=editor%2FUsingSensors_Color.html">Using the Color Sensor</a> for other ways to use the Color Sensor that don’t require a data wire.</div>
+				</div>
+	</div>
+	<div id="block_82" class="block blockChaptor">
+		<div class="title"><a name="ChooseTheSensorPortAndMode" style="position:relative; top:-10px;"></a>Choose the Sensor Port and Mode</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_Light.png" width="304" height="155" /><br />
+<br />
+<br />
+<img src="../../nonlocalized/editor/resources/content/1.png" width="26" height="22" /> Port Selector <br />
+<img src="../../nonlocalized/editor/resources/content/2.png" width="26" height="22" /> Mode Selector<br />
+<img src="../../nonlocalized/editor/resources/content/3.png" width="26" height="22" /> Inputs<br />
+<img src="../../nonlocalized/editor/resources/content/4.png" width="26" height="22" /> Outputs<br />
+<br />
+Use the <a href="page.html?Path=editor%2FPortSelector.html">Port Selector</a> on the top of the block to make sure that the sensor port number (1, 2, 3, or 4) matches the port on the EV3 Brick that the Color Sensor is connected to.<br />
+<br />
+Use the Mode Selector to select the mode for the block. The <a href="#InputsAndOutputs">Inputs and Outputs</a> available will change depending on the mode.</div>
+	</div>
+	<div id="block_83" class="block blockChaptor">
+		<div class="title">Modes</div>
+		<div class="description"></div>
+	</div>
+	<div id="block_84" class="block blockMode">
+		<div class="title"><a name="Mode_MeasureColor" style="position:relative; top:-10px;"></a>Measure - Color</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Measure_Color.png" width="304" height="95" /><br />
+<br />
+The Measure – Color mode outputs the detected color number in  <a href="#Color">Color</a>.</div>
+	</div>
+	<div id="block_86" class="block blockMode">
+		<div class="title"><a name="Mode_MeasureReflectedLight" style="position:relative; top:-10px;"></a>Measure – Reflected Light Intensity</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Measure_ReflectedLight.png" width="304" height="95" /><br />
+<br />
+The Measure – Reflected Light Intensity mode outputs the light intensity in <a href="#Value">Measured Value</a>.</div>
+			<div class="links">See programming example 5 in <a href="page.html?Path=editor%2FUsingSensors_Color.html">Using the Color Sensor</a>.</div>
+	</div>
+	<div id="block_87" class="block blockMode">
+		<div class="title"><a name="Mode_MeasureAmbientLight" style="position:relative; top:-10px;"></a>Measure – Ambient Light Intensity</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Measure_AmbiantLight.png" width="304" height="95" /><br />
+<br />
+The Measure – Ambient Light Intensity mode outputs the light intensity in <a href="#Value">Measured Value</a>.</div>
+	</div>
+	<div id="block_88" class="block blockMode">
+		<div class="title"><a name="Mode_CompareColor" style="position:relative; top:-10px;"></a>Compare – Color</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Compare_Color.png" width="304" height="95" /><br />
+<br />
+In the Compare – Color mode, you can select one or more colors in the <a href="#Setofcolors">Set of Colors</a>. The <a href="#Result">Compare Result</a> output will be True if the detected color matches any of the selected colors. The detected color is output to <a href="#Value">Measured Value</a>.</div>
+	</div>
+	<div id="block_89" class="block blockMode">
+		<div class="title"><a name="Mode_CompareReflectedLight" style="position:relative; top:-10px;"></a>Compare – Light Intensity  <a name="Mode_CompareAmbientLight" style="position:relative; top:-10px;"></a></div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Compare_ReflectedLight.png" width="304" height="95" /><br />
+<br />
+The Compare – Reflected Light Intensity and Compare – Ambient Light Intensity modes compare the detected light intensity to the <a href="#Threshold">Threshold Value</a> using the selected <a href="#Comparison">Compare Type</a>. The True/False result is output in <a href="#Result">Compare Result</a>, and the detected light intensity is output in <a href="#Value">Measured Value</a>.</div>
+	</div>
+	<div id="block_91" class="block blockExample">
+		<div class="title">Example 1</div>
+		<div class="image"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_ex1.png" /></div>
+		<div class="description">This program turns the Brick Status Light on in orange, and makes it pulse on and off whenever the Color Sensor detects an ambient light intensity greater than 50.</div>
+	</div>
+	<div id="block_92" class="block blockExample">
+		<div class="title">Example 2</div>
+		<div class="image"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_ex2.png" /></div>
+		<div class="description">This program makes a robot drive until the Color Sensor detects reflected light intensity < 50, or until motor B has turned 2000 degrees, whichever comes first.</div>
+	</div>
+	<div id="block_1412" class="block blockChaptor">
+		<div class="title"><a name="CalibrateModes" style="position:relative; top:-10px;"></a>Calibrate Modes</div>
+		<div class="description">The Calibrate modes allow you to calibrate the Color Sensor from within a program. You can also manually type in the minimum and maximum value the sensor should use.</div>
+	</div>
+	<div id="block_476" class="block blockMode">
+		<div class="title"><a name="Mode_CalibrateMinColor" style="position:relative; top:-10px;"></a>Calibrate - Minimum</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Calibrate_Minimum.png" width="304" height="95" /><br />
+<br />
+The Calibrate – Minimum mode allows you to specify the minimum light intensity in the <a href="#CalibrateValue">Value</a> input. After calibration, the Color Sensor will report this light intensity as 0 or the value specified.</div>
+	</div>
+	<div id="block_1410" class="block blockMode">
+		<div class="title"><a name="Mode_CalibrateMaxColor" style="position:relative; top:-10px;"></a>Calibrate - Maximum</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Calibrate_Maximum.png" width="304" height="95" /><br />
+<br />
+The Calibrate – Maximum mode allows you to specify the maximum light intensity in the <a href="#CalibrateValue">Value</a> input. After calibration, the Color Sensor will report this light intensity as 100 or the value specified.</div>
+	</div>
+	<div id="block_1411" class="block blockMode">
+		<div class="title"><a name="Mode_CalibrateResetColor" style="position:relative; top:-10px;"></a>Calibrate - Reset</div>
+		<div class="description"><img src="../../nonlocalized/editor/resources/content/Sensor_Palette_ColorSensor_Calibrate_Reset.png" width="304" height="95" /><br />
+<br />
+The Calibrate – Reset mode restores the Color Sensor calibration to its default state.</div>
+	</div>
+	<div id="block_93" class="block blockChaptor">
+		<div class="title"><a name="InputsAndOutputs" style="position:relative; top:-10px;"></a>Inputs and Outputs <a name="Parameters" style="position:relative; top:-10px;"></a></div>
+		<div class="description">The inputs available for the Color Sensor block will depend on the mode selected. You can enter the input values directly into the block. Alternatively, the input values can be supplied by <a href="page.html?Path=editor%2FDataWires.html">Data Wire</a> from the outputs of other Programming Blocks.</div>
+	</div>
+	<div id="block_96" class="block blockTable ">
+		<table class="blockTable">
+		
+
+			<tr>
+<th>Input</th><th>Type</th><th>Allowed Values</th><th>Notes</th>			</tr>
+<tr><td>Set of Colors <a name="Setofcolors" style="position:relative; top:-10px;"></a></td><td>Numeric Array</td><td>Each element: 0 – 7</td><td>Selected color(s) to test for in Compare – Color mode:<br />
+0 = No Color <br />
+1 = Black <br />
+2 = Blue <br />
+3 = Green <br />
+4 = Yellow <br />
+5 = Red <br />
+6 = White <br />
+7 = Brown</td></tr><tr><td>Compare Type <a name="Comparison" style="position:relative; top:-10px;"></a></td><td>Numeric</td><td>0 - 5</td><td>0:  = (Equal to)<br />
+1:  ≠ (Not Equal to)<br />
+2:  > (Greater than)<br />
+3:  ≥ (Greater than or Equal to)<br />
+4:  < (Less than)<br />
+5:  ≤ (Less than or Equal to)</td></tr><tr><td>Threshold Value <a name="Threshold" style="position:relative; top:-10px;"></a></td><td>Numeric</td><td>Any number</td><td>Value to compare sensor data to</td></tr><tr><td>Value <a name="CalibrateValue" style="position:relative; top:-10px;"></a>  <a name="CalibrateValueMin" style="position:relative; top:-10px;"></a>  <a name="CalibrateValueMax" style="position:relative; top:-10px;"></a></td><td>Numeric</td><td>0 – 100</td><td>Light intensity for Calibrate modes</td></tr>		</table>
+	</div>
+	<div id="block_99" class="block blockStep">
+		<div class="title"></div>
+		<div class="description">The outputs available will depend on the mode selected. To use an output, use a <a href="page.html?Path=editor%2FDataWires.html">Data Wires</a> to connect it to another Programming Block.</div>
+	</div>
+	<div id="block_98" class="block blockTable ">
+		<table class="blockTable">
+		
+
+			<tr>
+<th>Output</th><th>Type</th><th>Notes</th>			</tr>
+<tr><td>Color <a name="Color" style="position:relative; top:-10px;"></a></td><td>Numeric</td><td>Detected color number: <br />
+0 = No Color <br />
+1 = Black <br />
+2 = Blue <br />
+3 = Green <br />
+4 = Yellow <br />
+5 = Red <br />
+6 = White <br />
+7 = Brown</td></tr><tr><td>Compare Result <a name="Result" style="position:relative; top:-10px;"></a></td><td>Logic</td><td>True/False result of a Compare mode.</td></tr><tr><td>Measured Value <a name="Value" style="position:relative; top:-10px;"></a></td><td>Numeric</td><td>The sensor data value used for a Compare mode.</td></tr>		</table>
+	</div>
+	
+			<div id="quick">
+				<div class="header"><a href="#header">Color</a></div>
+					<div class="quickText">Quick links</div>
+					
+					<ul>
+	<li><a href="#ChooseTheSensorPortAndMode">Choose the Sensor Port and Mode</a></li><li><a href="#Mode_MeasureColor">Measure - Color</a></li><li><a href="#Mode_MeasureReflectedLight">Measure – Reflected Light Intensity</a></li><li><a href="#Mode_MeasureAmbientLight">Measure – Ambient Light Intensity</a></li><li><a href="#Mode_CompareColor">Compare – Color</a></li><li><a href="#Mode_CompareReflectedLight">Compare – Light Intensity </a></li><li><a href="#CalibrateModes">Calibrate Modes</a></li><li><a href="#Mode_CalibrateMinColor">Calibrate - Minimum</a></li><li><a href="#Mode_CalibrateMaxColor">Calibrate - Maximum</a></li><li><a href="#Mode_CalibrateResetColor">Calibrate - Reset</a></li><li><a href="#InputsAndOutputs">Inputs and Outputs</a></li>					</ul>
+			</div>
+	
+	
